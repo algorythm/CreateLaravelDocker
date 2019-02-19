@@ -1,9 +1,8 @@
 FROM composer
-LABEL maintainer="Anders wiberg Olsen"
+LABEL maintainer="Anders Wiberg Olsen"
 
-ENV projectName MyLaravelProject
+ENV project_name MyLaravelProject
 
 WORKDIR /src
-# VOLUME ["/src"]
 
-CMD composer create-project --prefer-dist laravel/laravel $projectName
+CMD composer create-project --prefer-dist laravel/laravel $project_name
